@@ -1,0 +1,23 @@
+* {
+    font-family: din-condensed,"DIN Alternate","Franklin Gothic Medium Cond","Arial Narrow",HelveticaNeue-Light,sans-serif;
+}
+
+.footer {
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    background: red;
+}
+
+h2 {
+    align-self: center;
+}
+
+.socials {
+    align-self: center;
+}
