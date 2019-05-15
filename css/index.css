@@ -1,0 +1,19 @@
+.nav-bar {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;   
+    font-family: din-condensed,"DIN Alternate","Franklin Gothic Medium Cond","Arial Narrow",HelveticaNeue-Light,sans-serif;
+}
+
+.logo {
+    width: 30%;
+}
+
+.anchor-bar {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
