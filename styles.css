@@ -73,7 +73,6 @@ p {
 }
 
 .nav-bar {
-    max-width: 1000px;
     margin: 0 auto;
     font-size: 18px;
     background-color: black;
@@ -101,13 +100,18 @@ p {
 }
 
 .about-section {
-    max-width: 1000px;
+    background-image: url(images/fifa-19.jpg);
+    color: white;
     margin: 0 auto;
     text-align: center;
     border: 1px solid black;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 100px;
     font-family: "Miso";
+}
+
+.about-content {
+    width: 65%;
 }
 
 .about-section div h2 {
