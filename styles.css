@@ -92,3 +92,33 @@ h2 {
 .socials-text {
     align-self: flex-end;
 }
+
+.search {
+    width: 950px;
+}
+
+.finder {
+    background-image: url(img/night-stadium.jpg);
+    height: 856px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+    background: #0E0E0E;
+    color: white;
+  }
+
+  tr {
+      margin: 0 auto;
+  }
+
+  form {
+    color: white;
+  }
