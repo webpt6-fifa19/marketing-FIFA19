@@ -61,14 +61,19 @@ p {
     line-height: 1.4;
 }
 
+@font-face {
+    font-family: 'Miso'; 
+    src: url('//Miso/miso-regular.ttf')
+}
+
 .nav-bar {
     max-width: 1000px;
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 18px;
     background-color: black;
     display: flex;
-    justify-content: space-between;   
-    font-family: din-condensed,"DIN Alternate","Franklin Gothic Medium Cond","Arial Narrow",HelveticaNeue-Light,sans-serif;
+    justify-content: space-between;  
+    font-family: "Miso"; 
 }
 
 .logo {
@@ -78,7 +83,7 @@ p {
 
 .anchor-bar {
     display: flex;
-    width: 40%;
+    width: 33%;
     justify-content: space-between;
     align-items: center;
     padding-right: 20px;
@@ -87,4 +92,36 @@ p {
 .anchor-bar a {
     text-decoration: none;
     color: white;
+}
+
+.about-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: "Miso";
+}
+
+.about-section div h2 {
+    font-size: 40px;
+    font-family: "Miso";
+}
+
+.about-section div p {
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Singup-btn{
+    background-color: #f93b78;
+    color: white;
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 10px 60px;
+    border-radius: 10px;
 }
