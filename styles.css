@@ -47,14 +47,20 @@ table {
 	border-spacing: 0;
 }
 /* End of reset */
+@font-face {
+    font-family: 'Miso'; 
+    src: url('//Miso/miso-regular.ttf')
+}
 
 * {
     box-sizing: border-box;
+    font-family: 'Miso';
+
 }
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Miso';
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,10 +73,7 @@ p {
     line-height: 1.4;
 }
 
-@font-face {
-    font-family: 'Miso'; 
-    src: url('//Miso/miso-regular.ttf')
-}
+
 
 .nav-bar {
     margin: 0 auto;
