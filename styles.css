@@ -292,3 +292,52 @@ form {
 .carousel-item {
       height: 850px;
 }
+
+.player-header {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #323639;
+    border: 1px solid white;
+    color: white;
+}
+
+.player-header span {
+    width: 100px;
+}
+
+.player {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #323639;
+    flex-direction: column;
+    border: 1px solid white;
+    height: 20px;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}
+
+.player-row{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.player-row span{
+    width: 100px;
+}
+
+.player-expanded{
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-open {
+    height: 235px;
+}
