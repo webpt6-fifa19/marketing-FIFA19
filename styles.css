@@ -129,6 +129,7 @@ div section {
 
 .about-content {
     padding-left: 260px;
+    padding-top: 180px;
     width: 60%;
 }
 
@@ -310,7 +311,7 @@ form {
 }
 
 .player-open {
-    height: 235px;
+    height: 255px;
     opacity: 1;
 }
 
