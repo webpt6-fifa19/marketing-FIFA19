@@ -127,6 +127,10 @@ table {
   border-spacing: 0;
 }
 /* End of reset */
+@font-face {
+  font-family: 'Miso';
+  src: url('../Miso/miso-regular.ttf');
+}
 * {
   box-sizing: border-box;
 }
@@ -230,29 +234,53 @@ div section {
 .div-content .finder .search form {
   color: #E8E8EE;
 }
-.div-content .finder .search table {
-  width: 100%;
-  color: black;
-  font-size: 25px;
-}
-.div-content .finder .search table tr {
+.div-content .finder .search .player-header {
+  width: 800px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #323639;
+  border: 1px solid white;
+  color: white;
 }
-.div-content .finder .search table tr tr th {
-  text-align: justify;
-  padding: 7px 0;
-  border-top: 1px solid lightgrey;
+.div-content .finder .search .player-header span {
+  width: 100px;
 }
-.div-content .finder .search table tr tr td {
-  padding: 7px 0;
-  border-bottom: 1px solid lightgrey;
-  border-top: 1px solid lightgrey;
+.div-content .finder .search .scrollable {
+  height: 80%;
+  overflow: auto;
 }
-.div-content .finder .search table tr:nth-child(even) {
-  background-color: lightgrey;
+.div-content .finder .search .scrollable .player {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #323639;
+  flex-direction: column;
+  border: 1px solid white;
+  height: 20px;
+  overflow: hidden;
+  color: white;
+  cursor: pointer;
+  opacity: 0.7;
 }
-.div-content .finder .search table tr:nth-child(odd) {
-  background-color: white;
+.div-content .finder .search .scrollable .player .player-row {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.div-content .finder .search .scrollable .player .player-row span {
+  width: 100px;
+}
+.div-content .finder .search .scrollable .player .player-expanded {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+.div-content .finder .search .scrollable .player-open {
+  height: 255px;
+  opacity: 1;
 }
 .div-content .download {
   padding-left: 30%;
