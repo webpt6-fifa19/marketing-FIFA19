@@ -48,10 +48,10 @@ table {
 }
 /* End of reset */
 
-// @font-face {
-//     font-family: 'Miso'; 
-//     src: url('./Miso/miso-regular.ttf')
-// }
+@font-face {
+    font-family: 'Miso'; 
+    src: url('../Miso/miso-regular.ttf')
+}
 
 * {
     box-sizing: border-box; 
@@ -161,30 +161,54 @@ div section {
             form {
                 color: #E8E8EE;
             }
-            table {
-                width: 100%;
-                color: black;
-                font-size: 25px;
-                tr {
-                    margin: 0 auto;
-                    tr th {
-                        text-align: justify;
-                        padding: 7px 0;
-                        border-top: 1px solid lightgrey;
-                    }
-                    tr td {
-                        padding: 7px 0;
-                        border-bottom: 1px solid lightgrey;
-                        border-top: 1px solid lightgrey;
-                    }
-                }
-                tr:nth-child(even) {
-                    background-color: lightgrey;
-                }               
-                tr:nth-child(odd) {
-                    background-color: white;
+            .player-header {
+                width: 800px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                background-color: #323639;
+                border: 1px solid white;
+                color: white;
+                span {
+                    width: 100px;
                 }
             }
+            .scrollable {
+                height: 80%;
+                overflow: auto;
+                .player {
+                    width: 800px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #323639;
+                    flex-direction: column;
+                    border: 1px solid white;
+                    height: 20px;
+                    overflow: hidden;
+                    color: white;
+                    cursor: pointer;
+                    opacity: 0.7;
+                    .player-row{
+                        width: 800px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 5px;
+                        span{
+                            width: 100px;
+                        }
+                    }
+                    .player-expanded{
+                        width: 800px;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+                .player-open {
+                    height: 255px;
+                    opacity: 1;
+                }
+            }           
         }
     }
 
