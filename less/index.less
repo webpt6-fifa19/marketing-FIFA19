@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset */
+
+// @font-face {
+//     font-family: 'Miso'; 
+//     src: url('./Miso/miso-regular.ttf')
+// }
+
+* {
+    box-sizing: border-box; 
+}
+
+html, body {
+    height: 100%;
+    font-family: "Miso";  
+    margin: 0 auto; 
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px; 
+}
+
+p {
+    line-height: 1.4;
+}
+
+.nav-content{
+    .lambda-logo {
+        height: 40px;
+        background-color: darkred;
+
+        .lbdSchool-logo {
+            max-width: 40px;
+            float: right;
+        }
+    }
+    .nav-bar {
+        margin: 0 auto; 
+        font-size: 18px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between; 
+        border: 1px solid black; 
+
+        .logo {
+            width: 30%;
+            padding-left: 20px;
+        }
+
+        .anchor-bar {
+            display: flex;
+            width: 33%;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+
+            .anchor-bar a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+div section {
+    border: 0.5px solid;
+}
+
+.div-content {
+    border: 1px solid black;   
+    .about-section {
+        background-image: url(../images/fifa-19.jpg);
+        color: white;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding-top: 150px;
+        padding-bottom: 100px;
+        font-family: "Miso";
+        height: 800px;
+        .about-content {
+            padding-left: 260px;
+            width: 60%;
+            h2 {
+                font-size: 60px;
+                font-family: "Miso";
+            }
+            p {
+                margin: 0 auto;
+                padding-bottom: 30px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .Singup-btn{
+            background-color: #f93b78;
+            color: white;
+            border: 1px solid black;
+            font-size: 25px;
+            padding: 10px 60px;
+            border-radius: 5px;
+        }
+    }
+
+    .finder {
+        background-image: url(../img/night-stadium.jpg);
+        height: 575px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        .search {
+            width: 1300px;
+            form {
+                color: #E8E8EE;
+            }
+            table {
+                width: 100%;
+                color: black;
+                font-size: 25px;
+                tr {
+                    margin: 0 auto;
+                    tr th {
+                        text-align: justify;
+                        padding: 7px 0;
+                        border-top: 1px solid lightgrey;
+                    }
+                    tr td {
+                        padding: 7px 0;
+                        border-bottom: 1px solid lightgrey;
+                        border-top: 1px solid lightgrey;
+                    }
+                }
+                tr:nth-child(even) {
+                    background-color: lightgrey;
+                }               
+                tr:nth-child(odd) {
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    .download {
+        padding-left: 30%;
+        background-image: url(../images/backgroung-img-download.jpg);
+        display: flex;
+        height: 400px;
+        .img-download {
+            max-width: 350px;
+        }
+        div{
+            padding-top: 93px;
+            padding-left: 72px;
+            h2 {
+                COLOR: white;
+                font-size: 50px;
+            }
+            .btn-download {
+                background-color: #f93b78;
+                color: white;
+                font-size: 25px;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .carousel-item {
+          height: 850px;
+    }
+}
+
+footer {
+    background: lightgray;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .footer {
+        width: 950px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h2 {
+            align-self: center;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+        .socials {
+            align-self: center;
+            display: flex;
+            justify-content: space-between;
+            width: 950px;
+            .socials-link {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                font-weight: 200;
+                .socials-img{
+                    width: 75%;
+                }
+                .socials-text {
+                    align-self: flex-end;
+                }
+            }
+        }
+        p {
+            text-align: center;
+            padding-top: 50px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
