@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset */
+
+// @font-face {
+//     font-family: 'Miso'; 
+//     src: url('./Miso/miso-regular.ttf')
+// }
+
+* {
+    box-sizing: border-box; 
+}
+
+html, body {
+    height: 100%;
+    font-family: "Miso";  
+    margin: 0 auto; 
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px; 
+}
+
+p {
+    line-height: 1.4;
+}
+
+.nav-content{
+    .lambda-logo {
+        height: 40px;
+        background-color: darkred;
+
+        .lbdSchool-logo {
+            max-width: 40px;
+            float: right;
+        }
+    }
+    .nav-bar {
+        margin: 0 auto; 
+        font-size: 18px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between; 
+        border: 1px solid black; 
+
+        .logo {
+            width: 30%;
+            padding-left: 20px;
+        }
+
+        .anchor-bar {
+            display: flex;
+            width: 33%;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+
+            .anchor-bar a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    .signin-section {
+        width: 80%;
+        height: 600px;
+        border-right: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            padding-bottom: 80px;
+            padding-top: 80px;
+            text-align: center;
+            font-size: 40px;
+        }
+        input {
+            text-align: center;
+            width: 70%;
+            margin-bottom: 50px;
+            margin-left: 15%;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid black;
+        }
+        button {
+            width: 70%;
+            text-align: center;
+            margin-left: 15%;
+            height: 50px;
+            background-color: #f93b78;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
+        .forgot-password {
+            width: 70%;
+            margin-left: 15%;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+    }
+    .register-section {
+        height: 600px;
+        padding-left: 7.5%;
+        h2 {
+            padding-bottom: 80px;
+            padding-top: 80px;
+            text-align: center;
+            font-size: 40px;
+        }
+        input {
+            text-align: center;
+            width: 70%;
+            margin-bottom: 50px;
+            margin-left: 15%;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid black;
+        }
+        button {
+            width: 70%;
+            text-align: center;
+            margin-left: 15%;
+            height: 50px;
+            background-color: #f93b78;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
+    }
+}
