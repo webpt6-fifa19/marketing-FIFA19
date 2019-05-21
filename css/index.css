@@ -310,6 +310,21 @@ div section {
 .div-content .carousel-item {
   height: 850px;
 }
+.div-content .carousel-item p {
+  font-size: 27px;
+}
+.div-content .carousel-item h5 {
+  font-size: 40px;
+  padding-bottom: 700px;
+}
+.div-content .carousel-item .first-fact {
+  padding-bottom: 650px;
+  padding-right: 668px;
+}
+.div-content .carousel-item .second-fact {
+  padding-bottom: 400px;
+  padding-left: 668px;
+}
 footer {
   background: lightgray;
   padding-top: 70px;
