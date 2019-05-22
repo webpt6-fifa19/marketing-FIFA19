@@ -155,28 +155,61 @@ p {
   height: 40px;
   background-color: darkred;
 }
+@media (max-width: 500px) {
+  .nav-content .lambda-logo {
+    height: 45px;
+  }
+}
 .nav-content .lambda-logo .lbdSchool-logo {
   max-width: 40px;
   float: right;
 }
+@media (max-width: 500px) {
+  .nav-content .lambda-logo .lbdSchool-logo {
+    max-width: 45px;
+  }
+}
 .nav-content .nav-bar {
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 20px;
   background-color: black;
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
 }
-.nav-content .nav-bar .logo {
+@media (max-width: 500px) {
+  .nav-content .nav-bar {
+    height: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-content .nav-bar div {
+    width: 50%;
+  }
+}
+.nav-content .nav-bar div .logo {
   width: 30%;
   padding-left: 20px;
 }
+@media (max-width: 500px) {
+  .nav-content .nav-bar div .logo {
+    width: 50%;
+    padding-left: 0;
+    padding-top: 2%;
+  }
+}
 .nav-content .nav-bar .anchor-bar {
   display: flex;
-  width: 33%;
+  width: 25%;
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
+}
+@media (max-width: 500px) {
+  .nav-content .nav-bar .anchor-bar {
+    font-size: 16px;
+    width: 80%;
+  }
 }
 .nav-content .nav-bar .anchor-bar .anchor-bar a {
   text-decoration: none;
@@ -186,7 +219,8 @@ div section {
   border: 0.5px solid;
 }
 .div-content {
-  border: 1px solid black;
+  width: 100%;
+  margin: 0 auto;
 }
 .div-content .about-section {
   background-image: url(../images/fifa-19.jpg);
@@ -198,19 +232,54 @@ div section {
   font-family: "Miso";
   height: 800px;
 }
+@media (max-width: 500px) {
+  .div-content .about-section {
+    padding-top: 100px;
+    padding-top: 40px;
+    height: 650px;
+  }
+}
+@media (max-width: 350px) {
+  .div-content .about-section {
+    height: 770px;
+  }
+}
 .div-content .about-section .about-content {
   padding-left: 260px;
   width: 60%;
 }
+@media (max-width: 500px) {
+  .div-content .about-section .about-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    width: 85%;
+    height: 540px;
+  }
+}
 .div-content .about-section .about-content h2 {
   font-size: 60px;
   font-family: "Miso";
+}
+@media (max-width: 500px) {
+  .div-content .about-section .about-content h2 {
+    text-align: center;
+    font-size: 40px;
+  }
 }
 .div-content .about-section .about-content p {
   margin: 0 auto;
   padding-bottom: 30px;
   font-size: 18px;
   line-height: 24px;
+  text-align: justify;
+}
+@media (max-width: 500px) {
+  .div-content .about-section .about-content p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+  }
 }
 .div-content .about-section .Singup-btn {
   background-color: #f93b78;
@@ -220,6 +289,12 @@ div section {
   padding: 10px 60px;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .div-content .about-section .Singup-btn {
+    font-size: 25px;
+    padding: 5px 35px;
+  }
+}
 .div-content .finder {
   background-image: url(../img/night-stadium.jpg);
   height: 575px;
@@ -228,11 +303,19 @@ div section {
   justify-content: center;
   padding-top: 60px;
 }
+@media (max-width: 500px) {
+  .div-content .finder {
+    height: 510px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 480px) {
+  .div-content .finder {
+    display: none;
+  }
+}
 .div-content .finder .search {
   width: 1300px;
-}
-.div-content .finder .search form {
-  color: #E8E8EE;
 }
 .div-content .finder .search .player-header {
   width: 800px;
@@ -242,6 +325,13 @@ div section {
   background-color: #323639;
   border: 1px solid white;
   color: white;
+}
+@media (max-width: 500px) {
+  .div-content .finder .search .player-header {
+    width: 470px;
+    height: 35px;
+    font-size: 30px;
+  }
 }
 .div-content .finder .search .player-header span {
   width: 100px;
@@ -264,11 +354,23 @@ div section {
   cursor: pointer;
   opacity: 0.7;
 }
+@media (max-width: 500px) {
+  .div-content .finder .search .scrollable .player {
+    width: 470px;
+    height: 31px;
+    font-size: 25px;
+  }
+}
 .div-content .finder .search .scrollable .player .player-row {
   width: 800px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
+}
+@media (max-width: 500px) {
+  .div-content .finder .search .scrollable .player .player-row {
+    width: 470px;
+  }
 }
 .div-content .finder .search .scrollable .player .player-row span {
   width: 100px;
@@ -278,9 +380,25 @@ div section {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .div-content .finder .search .scrollable .player .player-expanded {
+    width: 470px;
+  }
+}
+@media (max-width: 500px) {
+  .div-content .finder .search .scrollable .player .player-expanded img {
+    display: none;
+  }
+}
 .div-content .finder .search .scrollable .player-open {
   height: 255px;
   opacity: 1;
+}
+@media (max-width: 500px) {
+  .div-content .finder .search .scrollable .player-open {
+    width: 470px;
+    font-size: 20px;
+  }
 }
 .div-content .download {
   padding-left: 30%;
@@ -288,16 +406,38 @@ div section {
   display: flex;
   height: 400px;
 }
+@media (max-width: 500px) {
+  .div-content .download {
+    padding-left: 2%;
+    height: 225px;
+  }
+}
 .div-content .download .img-download {
   max-width: 350px;
+}
+@media (max-width: 500px) {
+  .div-content .download .img-download {
+    max-width: 200px;
+  }
 }
 .div-content .download div {
   padding-top: 93px;
   padding-left: 72px;
 }
+@media (max-width: 500px) {
+  .div-content .download div {
+    padding-top: 13%;
+    padding-left: 0;
+  }
+}
 .div-content .download div h2 {
   COLOR: white;
   font-size: 50px;
+}
+@media (max-width: 500px) {
+  .div-content .download div h2 {
+    font-size: 30px;
+  }
 }
 .div-content .download div .btn-download {
   background-color: #f93b78;
@@ -307,16 +447,30 @@ div section {
   border-radius: 5px;
   padding: 10px;
 }
-.div-content .carousel-item {
-  height: 850px;
+@media (max-width: 500px) {
+  .div-content .download div .btn-download {
+    font-size: 20px;
+  }
+}
+.div-content .carousel-inner .carousel-item p {
+  font-size: 27px;
+}
+.div-content .carousel-inner .carousel-item h5 {
+  font-size: 40px;
 }
 footer {
   background: lightgray;
   padding-top: 70px;
   padding-bottom: 70px;
 }
+@media (max-width: 500px) {
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 footer .footer {
-  width: 950px;
+  width: 100%px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -331,7 +485,12 @@ footer .footer .socials {
   align-self: center;
   display: flex;
   justify-content: space-between;
-  width: 950px;
+  width: 60%;
+}
+@media (max-width: 500px) {
+  footer .footer .socials {
+    width: 90%;
+  }
 }
 footer .footer .socials .socials-link {
   display: flex;

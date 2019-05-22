@@ -53,6 +53,10 @@ table {
     src: url('../Miso/miso-regular.ttf')
 }
 
+@mobile: ~"(max-width: 500px)";
+@iphone: ~"(max-width: 480px)";
+@phone: ~"(max-width: 350px)";
+
 * {
     box-sizing: border-box; 
 }
@@ -76,31 +80,53 @@ p {
     .lambda-logo {
         height: 40px;
         background-color: darkred;
+        @media @mobile {
+            height: 45px;
+        }
 
         .lbdSchool-logo {
             max-width: 40px;
             float: right;
+            @media @mobile {
+                max-width: 45px;
+            }
         }
     }
     .nav-bar {
         margin: 0 auto; 
-        font-size: 18px;
+        font-size: 20px;
         background-color: black;
         display: flex;
         justify-content: space-between; 
         border: 1px solid black; 
-
-        .logo {
-            width: 30%;
-            padding-left: 20px;
+        @media @mobile {
+            height: 40px;
         }
+        div {
+            @media @mobile {
+                width: 50%;
+            }
+            .logo {
+                width: 30%;
+                padding-left: 20px;
+                @media @mobile {
+                    width: 50%;
+                    padding-left: 0;
+                    padding-top: 2%;
+                }
+        }
+    }
 
         .anchor-bar {
             display: flex;
-            width: 33%;
+            width: 25%;
             justify-content: space-between;
             align-items: center;
             padding-right: 20px;
+            @media @mobile {
+                font-size: 16px;
+                width: 80%;            
+            }
 
             .anchor-bar a {
                 text-decoration: none;
@@ -115,7 +141,8 @@ div section {
 }
 
 .div-content {
-    border: 1px solid black;   
+    width: 100%;
+    margin: 0 auto;  
     .about-section {
         background-image: url(../images/fifa-19.jpg);
         color: white;
@@ -125,19 +152,44 @@ div section {
         padding-bottom: 100px;
         font-family: "Miso";
         height: 800px;
+        @media @mobile {
+            padding-top: 100px;
+            padding-top: 40px;
+            height: 650px;
+        }
+        @media @phone {
+            height: 770px;
+        }
         .about-content {
             padding-left: 260px;
             padding-top: 200px;
             width: 60%;
+            @media @mobile{
+                display: flex;
+                flex-direction: column;
+                padding-left: 70px;
+                width: 85%;
+                height: 540px;
+            }
             h2 {
                 font-size: 60px;
                 font-family: "Miso";
+                @media @mobile {
+                    text-align: center;
+                    font-size: 40px;
+                }
             }
             p {
                 margin: 0 auto;
                 padding-bottom: 30px;
                 font-size: 18px;
                 line-height: 24px;
+                text-align: justify;
+                @media @mobile{
+                    font-size: 20px;
+                    text-align: justify; 
+                    line-height: 35px;          
+                }
             }
         }
         .Singup-btn{
@@ -147,6 +199,10 @@ div section {
             font-size: 25px;
             padding: 10px 60px;
             border-radius: 5px;
+            @media @mobile {
+                font-size: 25px;
+                padding: 5px 35px;
+            }
         }
     }
 
@@ -157,11 +213,15 @@ div section {
         display: flex;
         justify-content: center;
         padding-top: 60px;
+        @media @mobile {
+            height: 510px;
+            padding-top: 70px;
+        }
+        @media @iphone {
+            display: none;
+        }
         .search {
             width: 1300px;
-            form {
-                color: #E8E8EE;
-            }
             .player-header {
                 width: 800px;
                 margin: 0 auto;
@@ -170,6 +230,11 @@ div section {
                 background-color: #323639;
                 border: 1px solid white;
                 color: white;
+                @media @mobile {
+                    width: 470px;
+                    height: 35px;
+                    font-size: 30px;
+                }
                 span {
                     width: 100px;
                 }
@@ -190,11 +255,19 @@ div section {
                     color: white;
                     cursor: pointer;
                     opacity: 0.7;
+                    @media @mobile {
+                        width: 470px;
+                        height: 31px;
+                        font-size: 25px;
+                    }
                     .player-row{
                         width: 800px;
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 5px;
+                        @media @mobile {
+                            width: 470px;
+                        }
                         span{
                             width: 100px;
                         }
@@ -203,11 +276,23 @@ div section {
                         width: 800px;
                         display: flex;
                         justify-content: space-around;
+                        @media @mobile {
+                            width: 470px;
+                        }
+                        img {
+                            @media @mobile {
+                            display: none;
+                            }
+                        }
                     }
                 }
                 .player-open {
                     height: 255px;
                     opacity: 1;
+                    @media @mobile {
+                        width: 470px;
+                        font-size: 20px;
+                    }
                 }
             }           
         }
@@ -218,15 +303,29 @@ div section {
         background-image: url(../images/backgroung-img-download.jpg);
         display: flex;
         height: 400px;
+        @media @mobile {
+            padding-left: 2%;
+            height: 225px;
+        }
         .img-download {
             max-width: 350px;
+            @media @mobile {
+                max-width: 200px;
+            }
         }
         div{
             padding-top: 93px;
             padding-left: 72px;
+            @media @mobile {
+                padding-top: 13%;
+                padding-left: 0;
+            }
             h2 {
                 COLOR: white;
                 font-size: 50px;
+                @media @mobile {
+                    font-size: 30px;
+                }
             }
             .btn-download {
                 background-color: #f93b78;
@@ -235,12 +334,21 @@ div section {
                 border: 1px solid black;
                 border-radius: 5px;
                 padding: 10px;
+                @media @mobile {
+                    font-size: 20px;
+                }
             }
         }
     }
-
-    .carousel-item {
-          height: 850px;
+    .carousel-inner {
+        .carousel-item {
+              p {
+                font-size: 27px;
+              }
+              h5 {
+                font-size: 40px;
+              }
+        }
     }
 }
 
@@ -248,8 +356,12 @@ footer {
     background: lightgray;
     padding-top: 70px;
     padding-bottom: 70px;
+    @media @mobile {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .footer {
-        width: 950px;
+        width: 100%px;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -263,7 +375,10 @@ footer {
             align-self: center;
             display: flex;
             justify-content: space-between;
-            width: 950px;
+            width: 60%;
+            @media @mobile {
+                width: 90%;
+            }
             .socials-link {
                 display: flex;
                 flex-direction: column;
