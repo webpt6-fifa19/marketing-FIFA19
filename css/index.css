@@ -235,8 +235,13 @@ div section {
 @media (max-width: 500px) {
   .div-content .about-section {
     padding-top: 100px;
-    padding-top: 115px;
-    height: 730px;
+    padding-top: 40px;
+    height: 650px;
+  }
+}
+@media (max-width: 350px) {
+  .div-content .about-section {
+    height: 770px;
   }
 }
 .div-content .about-section .about-content {
@@ -245,7 +250,9 @@ div section {
 }
 @media (max-width: 500px) {
   .div-content .about-section .about-content {
-    padding-left: 85px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
     width: 85%;
     height: 540px;
   }
@@ -265,6 +272,7 @@ div section {
   padding-bottom: 30px;
   font-size: 18px;
   line-height: 24px;
+  text-align: justify;
 }
 @media (max-width: 500px) {
   .div-content .about-section .about-content p {
@@ -284,8 +292,7 @@ div section {
 @media (max-width: 500px) {
   .div-content .about-section .Singup-btn {
     font-size: 25px;
-    margin-left: 30%;
-    padding: 10px 45px;
+    padding: 5px 35px;
   }
 }
 .div-content .finder {
@@ -300,6 +307,11 @@ div section {
   .div-content .finder {
     height: 510px;
     padding-top: 70px;
+  }
+}
+@media (max-width: 480px) {
+  .div-content .finder {
+    display: none;
   }
 }
 .div-content .finder .search {
@@ -397,7 +409,7 @@ div section {
 @media (max-width: 500px) {
   .div-content .download {
     padding-left: 2%;
-    height: 260px;
+    height: 225px;
   }
 }
 .div-content .download .img-download {
@@ -414,7 +426,7 @@ div section {
 }
 @media (max-width: 500px) {
   .div-content .download div {
-    padding-top: 17%;
+    padding-top: 13%;
     padding-left: 0;
   }
 }
@@ -440,28 +452,11 @@ div section {
     font-size: 20px;
   }
 }
-@media (max-width: 500px) {
-  .div-content .carousel-inner {
-    height: 333px;
-  }
-}
-.div-content .carousel-inner .carousel-item {
-  height: 850px;
-}
 .div-content .carousel-inner .carousel-item p {
   font-size: 27px;
 }
 .div-content .carousel-inner .carousel-item h5 {
   font-size: 40px;
-  padding-bottom: 700px;
-}
-.div-content .carousel-inner .carousel-item .first-fact {
-  padding-bottom: 650px;
-  padding-right: 668px;
-}
-.div-content .carousel-inner .carousel-item .second-fact {
-  padding-bottom: 400px;
-  padding-left: 668px;
 }
 footer {
   background: lightgray;
