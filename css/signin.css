@@ -127,6 +127,10 @@ table {
   border-spacing: 0;
 }
 /* End of reset */
+@font-face {
+  font-family: 'Miso';
+  src: url('../Miso/miso-regular.ttf');
+}
 * {
   box-sizing: border-box;
 }
@@ -151,9 +155,19 @@ p {
   height: 40px;
   background-color: darkred;
 }
+@media (max-width: 500px) {
+  .nav-content .lambda-logo {
+    height: 45px;
+  }
+}
 .nav-content .lambda-logo .lbdSchool-logo {
   max-width: 40px;
   float: right;
+}
+@media (max-width: 500px) {
+  .nav-content .lambda-logo .lbdSchool-logo {
+    max-width: 45px;
+  }
 }
 .nav-content .nav-bar {
   margin: 0 auto;
@@ -163,9 +177,26 @@ p {
   justify-content: space-between;
   border: 1px solid black;
 }
-.nav-content .nav-bar .logo {
+@media (max-width: 500px) {
+  .nav-content .nav-bar {
+    height: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-content .nav-bar div {
+    width: 50%;
+  }
+}
+.nav-content .nav-bar div .logo {
   width: 30%;
   padding-left: 20px;
+}
+@media (max-width: 500px) {
+  .nav-content .nav-bar div .logo {
+    width: 50%;
+    padding-left: 0;
+    padding-top: 2%;
+  }
 }
 .nav-content .nav-bar .anchor-bar {
   display: flex;
@@ -174,6 +205,12 @@ p {
   align-items: center;
   padding-right: 20px;
 }
+@media (max-width: 500px) {
+  .nav-content .nav-bar .anchor-bar {
+    font-size: 15px;
+    width: 100%;
+  }
+}
 .nav-content .nav-bar .anchor-bar .anchor-bar a {
   text-decoration: none;
   color: white;
@@ -181,12 +218,24 @@ p {
 .container {
   display: flex;
 }
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}
 .container .signin-section {
   width: 80%;
   height: 600px;
   border-right: 1px solid black;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .container .signin-section {
+    width: 100%;
+    height: 470px;
+    border-right: none;
+  }
 }
 .container .signin-section h2 {
   padding-bottom: 80px;
@@ -223,8 +272,14 @@ p {
   font-size: 12px;
 }
 .container .register-section {
+  width: 80%;
   height: 600px;
-  padding-left: 7.5%;
+}
+@media (max-width: 500px) {
+  .container .register-section {
+    width: 100%;
+    height: 470px;
+  }
 }
 .container .register-section h2 {
   padding-bottom: 80px;

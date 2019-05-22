@@ -48,10 +48,14 @@ table {
 }
 /* End of reset */
 
-// @font-face {
-//     font-family: 'Miso'; 
-//     src: url('./Miso/miso-regular.ttf')
-// }
+@font-face {
+    font-family: 'Miso'; 
+    src: url('../Miso/miso-regular.ttf')
+}
+
+@mobile: ~"(max-width: 500px)";
+@iphone: ~"(max-width: 480px)";
+@phone: ~"(max-width: 350px)";
 
 * {
     box-sizing: border-box; 
@@ -76,10 +80,16 @@ p {
     .lambda-logo {
         height: 40px;
         background-color: darkred;
+        @media @mobile {
+            height: 45px;
+        }
 
         .lbdSchool-logo {
             max-width: 40px;
             float: right;
+            @media @mobile {
+                max-width: 45px;
+            }
         }
     }
     .nav-bar {
@@ -89,11 +99,23 @@ p {
         display: flex;
         justify-content: space-between; 
         border: 1px solid black; 
-
-        .logo {
-            width: 30%;
-            padding-left: 20px;
+        @media @mobile {
+            height: 40px;
         }
+        div {
+            @media @mobile {
+                width: 50%;
+            }
+            .logo {
+                width: 30%;
+                padding-left: 20px;
+                @media @mobile {
+                    width: 50%;
+                    padding-left: 0;
+                    padding-top: 2%;
+                }
+        }
+    }
 
         .anchor-bar {
             display: flex;
@@ -101,6 +123,10 @@ p {
             justify-content: space-between;
             align-items: center;
             padding-right: 20px;
+            @media @mobile {
+                font-size: 15px;
+                width: 100%;            
+            }
 
             .anchor-bar a {
                 text-decoration: none;
@@ -112,12 +138,20 @@ p {
 
 .container {
     display: flex;
+    @media @mobile {
+        flex-direction: column;
+    }
     .signin-section {
         width: 80%;
         height: 600px;
         border-right: 1px solid black;
         display: flex;
         flex-direction: column;
+        @media @mobile {
+            width: 100%;
+            height: 470px;
+            border-right: none;
+        }
         h2 {
             padding-bottom: 80px;
             padding-top: 80px;
@@ -154,8 +188,12 @@ p {
         }
     }
     .register-section {
+        width: 80%;
         height: 600px;
-        padding-left: 7.5%;
+        @media @mobile {
+            width: 100%;
+            height: 470px;
+        }
         h2 {
             padding-bottom: 80px;
             padding-top: 80px;
