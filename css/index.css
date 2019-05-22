@@ -171,7 +171,7 @@ p {
 }
 .nav-content .nav-bar {
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 20px;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -200,15 +200,15 @@ p {
 }
 .nav-content .nav-bar .anchor-bar {
   display: flex;
-  width: 33%;
+  width: 25%;
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
 }
 @media (max-width: 500px) {
   .nav-content .nav-bar .anchor-bar {
-    font-size: 15pxpx;
-    width: 100%;
+    font-size: 16px;
+    width: 80%;
   }
 }
 .nav-content .nav-bar .anchor-bar .anchor-bar a {
