@@ -101,13 +101,13 @@ let jogador = document.querySelector('.player-search');
 
 const searchPLayer = (players) => {
     players.forEach(player => {
-        const div = document.createElement("div");
-        new Append(div, 'span', player.name);
-        new Append(div, 'span', player.position);
-        new Append(div, 'span', player.number);
-        new Append(div, 'span', player.team);
-        new Append(div, 'span', player.age);
-        jogador.appendChild(div);   
+        const tr = document.createElement("tr");
+        new Append(tr, 'td', player.name);
+        new Append(tr, 'td', player.position);
+        new Append(tr, 'td', player.number);
+        new Append(tr, 'td', player.team);
+        new Append(tr, 'td', player.age);
+        jogador.appendChild(tr);   
     })
 }
 

@@ -215,3 +215,17 @@ p {
   text-decoration: none;
   color: white;
 }
+.player-search {
+  width: 80%;
+  font-size: 18px;
+}
+.player-search tr th {
+  text-align: justify;
+  padding: 7px 0;
+  border-top: 1px solid black;
+}
+.player-search tr td {
+  padding: 7px 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
