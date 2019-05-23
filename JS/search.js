@@ -63,7 +63,7 @@ const zlatan = new Player({
 })
 
 const salah = new Player({
-    name: "Mahamed Salah",
+    name: "Mohamed Salah",
     position: 'RW',
     number: 11,
     team: "Liverpool",
