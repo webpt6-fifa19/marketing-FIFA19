@@ -211,7 +211,7 @@ p {
     width: 80%;
   }
 }
-.nav-content .nav-bar .anchor-bar .anchor-bar a {
+.nav-content .nav-bar .anchor-bar a {
   text-decoration: none;
   color: white;
 }
@@ -246,6 +246,7 @@ div section {
 }
 .div-content .about-section .about-content {
   padding-left: 260px;
+  padding-top: 200px;
   width: 60%;
 }
 @media (max-width: 500px) {
@@ -253,6 +254,7 @@ div section {
     display: flex;
     flex-direction: column;
     padding-left: 70px;
+    padding-top: 200px;
     width: 85%;
     height: 540px;
   }
