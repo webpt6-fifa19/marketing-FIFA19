@@ -205,14 +205,12 @@ p {
   align-items: center;
   padding-right: 20px;
 }
-
 @media (max-width: 500px) {
   .nav-content .nav-bar .anchor-bar {
     font-size: 16px;
     width: 80%;
   }
 }
-
 .nav-content .nav-bar .anchor-bar a {
   text-decoration: none;
   color: white;
