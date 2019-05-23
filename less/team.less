@@ -53,9 +53,12 @@ table {
     src: url('../Miso/miso-regular.ttf')
 }
 
+@mobile: ~"(max-width: 500px)";
+@iphone: ~"(max-width: 480px)";
+@phone: ~"(max-width: 350px)";
+
 * {
     box-sizing: border-box;
-    font-family: 'Miso';  
 }
 
 html, body {
@@ -77,33 +80,55 @@ p {
     .lambda-logo {
         height: 40px;
         background-color: darkred;
+        @media @mobile {
+            height: 45px;
+        }
 
         .lbdSchool-logo {
             max-width: 40px;
             float: right;
+            @media @mobile {
+                max-width: 45px;
+            }
         }
     }
     .nav-bar {
         margin: 0 auto; 
-        font-size: 18px;
+        font-size: 20px;
         background-color: black;
         display: flex;
         justify-content: space-between; 
         border: 1px solid black; 
-
-        .logo {
-            width: 30%;
-            padding-left: 20px;
+        @media @mobile {
+            height: 40px;
         }
+        div {
+            @media @mobile {
+                width: 50%;
+            }
+            .logo {
+                width: 30%;
+                padding-left: 20px;
+                @media @mobile {
+                    width: 50%;
+                    padding-left: 0;
+                    padding-top: 2%;
+                }
+        }
+    }
 
         .anchor-bar {
             display: flex;
-            width: 33%;
+            width: 25%;
             justify-content: space-between;
             align-items: center;
             padding-right: 20px;
+            @media @mobile {
+                font-size: 16px;
+                width: 80%;            
+            }
 
-            .anchor-bar a {
+            a {
                 text-decoration: none;
                 color: white;
             }
@@ -112,20 +137,32 @@ p {
 }
 
 .container {
+    display: flex;
+    @media @mobile {
+        flex-direction: column;
+    }
     .member-section {
         width: 50%;
         height: 600px;
         border-right: 1px solid black;
         display: flex;
         padding-top: 180px;
-        padding-left: 80px; 
-        justify-content: flex-start;
+        padding-left: 80px;
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            border-right: none;
+            padding-left: 50px;
+            padding-top: 120px;
+            padding-right: 50px;
+            height: 470px;
+            width: 100%;
+        } 
         .member-image {
             img {
                 border-radius: 50%;
-                width: 75%;
                 height: auto;
-                overflow: hidden;
+                overflow: hidden;               
             }
         }
         .member-name {
@@ -133,15 +170,24 @@ p {
             flex-direction: column;
             justify-content: center;
             height: 200px;
+            @media @mobile {
+                height: 140px;
+            }
             h1 {
-                font-size: 2.2rem;
+                font-size: 2.8rem;
                 font-weight: 1000;
+                @media @mobile {
+                    font-size: 1.8rem;
+                }
             }
             h2 {
                 padding-bottom: 30px;
                 padding-top: 5px;
                 font-size: 1.8rem;
                 font-weight: 20;
+                @media @mobile {
+                    font-size: 1.4rem;
+                }
             }
         }
         p{
@@ -149,6 +195,14 @@ p {
             padding-top: 100px;
             padding-left: 30px;
             font-size: 1.4rem;
+            @media @mobile {
+                width: 100%;
+                font-size: 1rem;
+                padding-top: 0;
+                padding-left: 0;
+                padding-bottom: 50px;
+                text-align: justify;
+            }
         }
     }
 }

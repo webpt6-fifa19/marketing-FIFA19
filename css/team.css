@@ -133,7 +133,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  font-family: 'Miso';
 }
 html,
 body {
@@ -156,32 +155,73 @@ p {
   height: 40px;
   background-color: darkred;
 }
+@media (max-width: 500px) {
+  .nav-content .lambda-logo {
+    height: 45px;
+  }
+}
 .nav-content .lambda-logo .lbdSchool-logo {
   max-width: 40px;
   float: right;
 }
+@media (max-width: 500px) {
+  .nav-content .lambda-logo .lbdSchool-logo {
+    max-width: 45px;
+  }
+}
 .nav-content .nav-bar {
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 20px;
   background-color: black;
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
 }
-.nav-content .nav-bar .logo {
+@media (max-width: 500px) {
+  .nav-content .nav-bar {
+    height: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-content .nav-bar div {
+    width: 50%;
+  }
+}
+.nav-content .nav-bar div .logo {
   width: 30%;
   padding-left: 20px;
 }
+@media (max-width: 500px) {
+  .nav-content .nav-bar div .logo {
+    width: 50%;
+    padding-left: 0;
+    padding-top: 2%;
+  }
+}
 .nav-content .nav-bar .anchor-bar {
   display: flex;
-  width: 33%;
+  width: 25%;
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
 }
-.nav-content .nav-bar .anchor-bar .anchor-bar a {
+@media (max-width: 500px) {
+  .nav-content .nav-bar .anchor-bar {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+.nav-content .nav-bar .anchor-bar a {
   text-decoration: none;
   color: white;
+}
+.container {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
 }
 .container .member-section {
   width: 50%;
@@ -190,11 +230,21 @@ p {
   display: flex;
   padding-top: 180px;
   padding-left: 80px;
-  justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  .container .member-section {
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    padding-left: 50px;
+    padding-top: 120px;
+    padding-right: 50px;
+    height: 470px;
+    width: 100%;
+  }
 }
 .container .member-section .member-image img {
   border-radius: 50%;
-  width: 75%;
   height: auto;
   overflow: hidden;
 }
@@ -204,9 +254,19 @@ p {
   justify-content: center;
   height: 200px;
 }
+@media (max-width: 500px) {
+  .container .member-section .member-name {
+    height: 140px;
+  }
+}
 .container .member-section .member-name h1 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: 1000;
+}
+@media (max-width: 500px) {
+  .container .member-section .member-name h1 {
+    font-size: 1.8rem;
+  }
 }
 .container .member-section .member-name h2 {
   padding-bottom: 30px;
@@ -214,9 +274,24 @@ p {
   font-size: 1.8rem;
   font-weight: 20;
 }
+@media (max-width: 500px) {
+  .container .member-section .member-name h2 {
+    font-size: 1.4rem;
+  }
+}
 .container .member-section p {
   width: 60%;
   padding-top: 100px;
   padding-left: 30px;
   font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .container .member-section p {
+    width: 100%;
+    font-size: 1rem;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 50px;
+    text-align: justify;
+  }
 }
