@@ -94,9 +94,75 @@ const dybala = new Player({
     age: 25
 })
 
-const players = [messi, ronaldo, neymar, mbappe, zlatan, salah, kompany, hazard, dybala]
+const coutinho = new Player({
+    name: "Philippe Coutinho",
+    position: 'LW',
+    number: 7,
+    team: "FC Barcelona",
+    age: 26
+})
+
+const adan = new Player({
+    name: "Paulo Dybala",
+    position: 'GK',
+    number: 1,
+    team: "Atletico Madrid",
+    age: 32
+})
+
+const modric = new Player({
+    name: "Luka Modric",
+    position: 'CM',
+    number: 10,
+    team: "Real Madrid C.F.",
+    age: 33
+})
+
+const benzema = new Player({
+    name: "Karim Benzema",
+    position: 'CF',
+    number: 9,
+    team: "Real Madrid C.F.",
+    age: 31
+})
+
+const navas = new Player({
+    name: "Keylor Navas",
+    position: 'GK',
+    number: 1,
+    team: "Real Madrid C.F.",
+    age: 32
+})
+
+const costa = new Player({
+    name: "Douglas Costa",
+    position: 'RW',
+    number: 11,
+    team: "Juventus",
+    age: 28
+})
+
+const firmino = new Player({
+    name: "Roberto Firmino",
+    position: 'CF',
+    number: 9,
+    team: "Liverpool",
+    age: 27
+})
+
+const jesus = new Player({
+    name: "Gabriel Jesus",
+    position: 'CF',
+    number: 33,
+    team: "Manchester City",
+    age: 22
+})
+
+const players = [modric, costa, adan, coutinho, messi, navas, ronaldo,
+     neymar, benzema, mbappe, zlatan, jesus, salah, firmino, kompany, hazard, dybala]
 
 let jogador = document.querySelector('.player-search');
+
 
 
 const searchPLayer = (players) => {
@@ -113,10 +179,29 @@ const searchPLayer = (players) => {
 
 searchPLayer(players);
 
+// SEARCH PLAYER FUNCTION //
+
 let btn = document.querySelector('.btn');
 btn.addEventListener('click', () => {
     let input = document.querySelector('.input');
     const newPlayers = players.filter(player => player.name.toLowerCase().includes(input.value.toLowerCase()));
     jogador.innerHTML = "";
     searchPLayer(newPlayers);
+    input.value = "";
 } )
+
+// TAB TO SEARCH PLAYER IN EACH TEAM //
+
+let topics = document.querySelectorAll('.tab');
+topics.forEach(topic => {
+    topic.addEventListener('click', () => {
+        jogador.innerHTML = "";
+        if ( topic.innerHTML.toLocaleLowerCase() == 'all' ){
+            searchPLayer(players);
+        }
+        else {
+            const newPlayers = players.filter(player => player.team.toLowerCase() == topic.innerHTML.toLocaleLowerCase());
+            searchPLayer(newPlayers);
+        }
+    })
+})
