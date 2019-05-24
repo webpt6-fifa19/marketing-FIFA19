@@ -319,6 +319,7 @@ div section {
 }
 .div-content .finder .search {
   width: 1300px;
+  font-size: 2rem;
 }
 .div-content .finder .search .player-header {
   width: 800px;
@@ -462,7 +463,7 @@ div section {
   font-size: 4rem;
 }
 footer {
-  background: lightgray;
+  background: white;
   padding-top: 70px;
   padding-bottom: 70px;
 }
