@@ -134,6 +134,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
@@ -145,7 +148,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-size: 18px;
+  font-size: 1.8rem;
   margin-bottom: 15px;
 }
 p {
@@ -171,7 +174,7 @@ p {
 }
 .nav-content .nav-bar {
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 2rem;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -207,7 +210,7 @@ p {
 }
 @media (max-width: 500px) {
   .nav-content .nav-bar .anchor-bar {
-    font-size: 14px;
+    font-size: 1.4rem;
     width: 100%;
   }
 }
@@ -258,25 +261,25 @@ div section {
   }
 }
 .div-content .about-section .about-content h2 {
-  font-size: 60px;
+  font-size: 6rem;
   font-family: "Miso";
 }
 @media (max-width: 500px) {
   .div-content .about-section .about-content h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
   }
 }
 .div-content .about-section .about-content p {
   margin: 0 auto;
   padding-bottom: 30px;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 24px;
   text-align: justify;
 }
 @media (max-width: 500px) {
   .div-content .about-section .about-content p {
-    font-size: 20px;
+    font-size: 2rem;
     text-align: justify;
     line-height: 35px;
   }
@@ -285,13 +288,13 @@ div section {
   background-color: #f93b78;
   color: white;
   border: 1px solid black;
-  font-size: 25px;
+  font-size: 2.5rem;
   padding: 10px 60px;
   border-radius: 5px;
 }
 @media (max-width: 500px) {
   .div-content .about-section .Singup-btn {
-    font-size: 25px;
+    font-size: 2.5rem;
     padding: 5px 35px;
   }
 }
@@ -330,7 +333,7 @@ div section {
   .div-content .finder .search .player-header {
     width: 470px;
     height: 35px;
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
 .div-content .finder .search .player-header span {
@@ -358,7 +361,7 @@ div section {
   .div-content .finder .search .scrollable .player {
     width: 470px;
     height: 31px;
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 .div-content .finder .search .scrollable .player .player-row {
@@ -397,7 +400,7 @@ div section {
 @media (max-width: 500px) {
   .div-content .finder .search .scrollable .player-open {
     width: 470px;
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 .div-content .download {
@@ -432,31 +435,31 @@ div section {
 }
 .div-content .download div h2 {
   COLOR: white;
-  font-size: 50px;
+  font-size: 5rem;
 }
 @media (max-width: 500px) {
   .div-content .download div h2 {
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
 .div-content .download div .btn-download {
   background-color: #f93b78;
   color: white;
-  font-size: 25px;
+  font-size: 2.5rem;
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
 }
 @media (max-width: 500px) {
   .div-content .download div .btn-download {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 .div-content .carousel-inner .carousel-item p {
-  font-size: 27px;
+  font-size: 2.7rem;
 }
 .div-content .carousel-inner .carousel-item h5 {
-  font-size: 40px;
+  font-size: 4rem;
 }
 footer {
   background: lightgray;

@@ -134,6 +134,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
@@ -145,7 +148,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-size: 18px;
+  font-size: 1.8rem;
   margin-bottom: 15px;
 }
 p {
@@ -171,7 +174,7 @@ p {
 }
 .nav-content .nav-bar {
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 2rem;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -207,7 +210,7 @@ p {
 }
 @media (max-width: 500px) {
   .nav-content .nav-bar .anchor-bar {
-    font-size: 14px;
+    font-size: 1.4rem;
     width: 100%;
   }
 }
@@ -283,12 +286,12 @@ p {
   width: 60%;
   padding-top: 100px;
   padding-left: 30px;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 @media (max-width: 500px) {
   .container .member-section p {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 50px;
