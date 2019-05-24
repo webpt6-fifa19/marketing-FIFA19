@@ -61,6 +61,8 @@ table {
     box-sizing: border-box;
 }
 
+html { font-size: 62.5%; }
+
 html, body {
     height: 100%;
     font-family: 'Miso';  
@@ -68,8 +70,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px; 
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem; 
 }
 
 p {
@@ -94,7 +96,7 @@ p {
     }
     .nav-bar {
         margin: 0 auto; 
-        font-size: 20px;
+        font-size: 2.0rem;
         background-color: black;
         display: flex;
         justify-content: space-between; 
@@ -124,7 +126,7 @@ p {
             align-items: center;
             padding-right: 20px;
             @media @mobile {
-                font-size: 14px;
+                font-size: 1.4rem;
                 width: 100%;            
             }
 
@@ -136,9 +138,66 @@ p {
     }
 }
 
+.search {
+    padding-left: 20px;
+    padding-top: 20px;
+    @media @mobile {
+        padding-bottom: 35px;
+    }
+}
+
+.team {
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 47px;
+    background-color: #fff;
+    @media @mobile {
+        display: none;
+    }
+    .title {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    .topics {
+        display: flex;
+        justify-content: none;
+        align-items: center;
+        flex-direction: row;
+        .active-tab {
+            background-color: #fff;
+            color: #333;
+            border: 2px solid #333;
+        }
+        .tab {
+            display: flex;
+            justify-content: none;
+            align-items: center;
+            flex-direction: row;
+            color: #fff;
+            background-color: #333;
+            margin: 0 5px;
+            padding: 2px 10px;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+}
+
 .player-search {
-    width: 80%;
-    font-size: 18px;
+    width: 100%;
+    font-size: 1.8rem;
+    @media @mobile {
+        font-size: 1.5rem;
+    }
+    tr:nth-child(even) {
+        background-color: azure;
+    }
     tr {
         th{
             text-align: justify;
@@ -148,7 +207,10 @@ p {
         td {
             padding: 7px 0;
 			border-bottom: 1px solid black;
-			border-top: 1px solid black;
+            border-top: 1px solid black;
+            @media @mobile {
+                padding: 7px 2px;
+            }
         }
     }
 }
