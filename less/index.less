@@ -164,7 +164,6 @@ div section {
         }
         .about-content {
             padding-left: 260px;
-            padding-top: 200px;
             width: 60%;
             @media @mobile{
                 display: flex;
@@ -224,10 +223,13 @@ div section {
             display: none;
         }
         .search {
-            width: 1300px;
+            width: 80%;
             font-size: 2.0rem;
+            @media @mobile {
+                width: 100%;
+            }
             .player-header {
-                width: 800px;
+                width: 100%;
                 margin: 0 auto;
                 display: flex;
                 justify-content: space-between;
@@ -236,7 +238,7 @@ div section {
                 color: white;
                 font-size: 1.6rem;
                 @media @mobile {
-                    width: 470px;
+                    width: 100%;
                     height: 35px;
                     font-size: 3.0rem;
                 }
@@ -245,10 +247,10 @@ div section {
                 }
             }
             .scrollable {
-                height: 80%;
+                height: 100%;
                 overflow: auto;
                 .player {
-                    width: 800px;
+                    width: 100%;
                     margin: 0 auto;
                     display: flex;
                     justify-content: space-between;
@@ -261,25 +263,26 @@ div section {
                     cursor: pointer;
                     opacity: 0.7;
                     @media @mobile {
-                        width: 470px;
+                        width: 100%;
                         height: 31px;
                         font-size: 2.5rem;
                     }
                     .player-row{
-                        width: 800px;
+                        width: 100%;
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 5px;
                         font-size: 1.6rem;
                         @media @mobile {
                             width: 470px;
+                            font-size: 1.9rem;
                         }
                         span{
-                            width: 100px;
+                            width: 100%;
                         }
                     }
                     .player-expanded{
-                        width: 800px;
+                        width: 100%;
                         display: flex;
                         justify-content: space-around;
                         font-size: 1.6rem;
@@ -299,6 +302,7 @@ div section {
                     @media @mobile {
                         width: 470px;
                         font-size: 2.0rem;
+                        height: 215px;
                     }
                 }
             }           
