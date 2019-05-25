@@ -265,6 +265,7 @@ p {
   border-radius: 5px;
   border: 1px solid black;
   margin-bottom: 15px;
+  font-size: 1.8rem;
 }
 .container .signin-section .forgot-password {
   width: 70%;
@@ -309,4 +310,5 @@ p {
   border-radius: 5px;
   border: 1px solid black;
   margin-bottom: 15px;
+  font-size: 1.8rem;
 }
